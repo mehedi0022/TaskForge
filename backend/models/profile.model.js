@@ -7,14 +7,14 @@ const ProfileSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
-
+    profileImage: {
+      url: String,
+      public_id: String,
+    },
     title: String,
     skills: [String],
-    experienceLevel: String,
     bio: String,
-
-    portfolioLinks: [String],
-
+    portfolioLink: String,
     hourlyRate: Number,
   },
   { timestamps: true, versionKey: false },
